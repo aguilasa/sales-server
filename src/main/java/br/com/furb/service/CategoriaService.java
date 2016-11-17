@@ -21,7 +21,7 @@ import br.com.furb.repository.CategoriaRepository;
 @Path("/categoria")
 public class CategoriaService {
 
-	private final CategoriaRepository repository = new CategoriaRepository(CategoriaEntity.class);
+	private final CategoriaRepository repository = new CategoriaRepository();
 
 	@POST
 	@Consumes("application/json; charset=UTF-8")

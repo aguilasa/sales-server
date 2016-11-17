@@ -6,7 +6,7 @@ import br.com.furb.entity.CategoriaEntity;
 
 public class CategoriaRepository extends Repository<CategoriaEntity> {
 
-    public CategoriaRepository(Class<CategoriaEntity> clazz) {
+    public CategoriaRepository() {
         super();
     }
     

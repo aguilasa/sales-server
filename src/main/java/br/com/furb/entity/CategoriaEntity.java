@@ -34,7 +34,7 @@ public class CategoriaEntity implements java.io.Serializable {
 		this.id = id;
 	}
 
-	@Column(name = "categoria", nullable = false, length = 30)
+	@Column(name = "categoria", nullable = false, length = 50)
 	public String getCategoria() {
 		return this.categoria;
 	}
