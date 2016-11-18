@@ -51,10 +51,9 @@ public class CategoriaService {
 	@Path("/alterar")
 	public CategoriaResponse alterar(Categoria categoria) {
 
-		CategoriaEntity entity = new CategoriaEntity();
+		CategoriaEntity entity = repository.getCategoria(categoria.getId());
 
 		try {
-			entity.setId(categoria.getId());
 			entity.setCategoria(categoria.getCategoria());
 
 			repository.persist(entity);

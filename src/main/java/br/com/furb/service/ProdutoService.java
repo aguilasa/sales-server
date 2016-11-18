@@ -58,7 +58,7 @@ public class ProdutoService {
 	@Path("/alterar")
 	public ProdutoResponse alterar(Produto produto) {
 
-		ProdutoEntity entity = new ProdutoEntity();
+		ProdutoEntity entity = produtoRepository.getProduto(produto.getId());
 
 		try {
 			CategoriaEntity categoria = categoriaRepository.getCategoria(produto.getCategoria().getId());
